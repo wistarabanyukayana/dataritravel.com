@@ -9,6 +9,7 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="Datari Tour and Travel"
+            className="w-[200px] h-[50px]"
             width={200}
             height={50}
             priority

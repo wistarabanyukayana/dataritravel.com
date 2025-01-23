@@ -11,7 +11,7 @@ export default function Topbar() {
         <div className="flex flex-col items-center gap-1 sm:flex-row sm:items-center sm:gap-4 sm:text-left">
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
             <a
-              href="#"
+              href="tel:88222122250"
               className="transition-opacity hover:opacity-80"
               aria-label="Phone Number"
             >
@@ -19,9 +19,9 @@ export default function Topbar() {
             </a>
             <span className="hidden min-[307px]:inline-block">|</span>
             <a
-              href="#"
+              href="mailto:layanan@dataritravel.com"
               className="transition-opacity hover:opacity-80"
-              aria-label="Facebook"
+              aria-label="E-Mail"
             >
               <span className="text-xs">layanan@dataritravel.com</span>
             </a>
@@ -29,14 +29,14 @@ export default function Topbar() {
         </div>
         <div className="hidden sm:flex items-center gap-4">
           <a
-            href="#"
+            href="https://web.facebook.com/dataritravelindonesia"
             className="transition-opacity hover:opacity-80"
             aria-label="Facebook"
           >
             <SiFacebook className="h-4 w-4" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/dataritravelindonesia/"
             className="transition-opacity hover:opacity-80"
             aria-label="Instagram"
           >

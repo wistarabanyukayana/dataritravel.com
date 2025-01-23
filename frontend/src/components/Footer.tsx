@@ -8,9 +8,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-neutral-900 px-8 py-8">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center text-center text-sm text-white font-montserrat font-medium sm:text-start sm:justify-between">
-        <div className="w-full flex flex-row flex-wrap sm:flex-nowrap justify-center sm:justify-between gap-4">
+    <footer className="w-full bg-neutral-900 px-8 py-8 sm:px-20 sm:py-20">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center text-center text-xs text-white font-montserrat font-medium sm:text-start sm:justify-between">
+        <div className="w-full flex flex-row flex-wrap justify-center gap-7 sm:flex-nowrap sm:justify-between sm:gap-4">
           <div className="w-auto">
             <div className="uppercase mb-[15px] font-semibold text-yellow-400">
               Tentang Kami
@@ -70,16 +70,16 @@ export default function Footer() {
                 layanan@dataritravel.com
               </a>
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-4 sm:justify-start">
               <a
-                href="#"
+                href="https://web.facebook.com/dataritravelindonesia"
                 className="transition-opacity hover:opacity-80"
                 aria-label="Facebook"
               >
                 <SiFacebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/dataritravelindonesia/"
                 className="transition-opacity hover:opacity-80"
                 aria-label="Instagram"
               >
@@ -96,11 +96,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full border-t-[1px] border-white flex flex-row flex-wrap mt-8 pt-8 pb-4 gap-2 justify-center sm:justify-between">
-          <p className="text-xs text-yellow-400">
+          <p className="text-yellow-400">
             &copy; {new Date().getFullYear()} PT. Dallas Wisata Mandiri. Semua
             Hak Cipta Dilindungi.
           </p>
-          <p className="text-xs text-yellow-400">Syarat & Ketentuan</p>
+          <p className="text-yellow-400">Syarat & Ketentuan</p>
         </div>
       </div>
     </footer>
