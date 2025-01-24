@@ -9,10 +9,10 @@ import {
 export default function Footer() {
   return (
     <footer className="w-full bg-neutral-900 px-8 py-8 sm:px-20 sm:py-20">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center text-center text-xs text-white font-montserrat font-medium sm:text-start sm:justify-between">
-        <div className="w-full flex flex-row flex-wrap justify-center gap-7 sm:flex-nowrap sm:justify-between sm:gap-4">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center text-center font-montserrat text-xs font-medium text-white sm:justify-between sm:text-start">
+        <div className="flex w-full flex-row flex-wrap justify-center gap-7 sm:flex-nowrap sm:justify-between sm:gap-4">
           <div className="w-auto">
-            <div className="uppercase mb-[15px] font-semibold text-yellow-400">
+            <div className="mb-[15px] font-semibold uppercase text-yellow-400">
               Tentang Kami
             </div>
             <p className="m-0">
@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="w-auto">
-            <div className="uppercase mb-[15px] font-semibold text-yellow-400">
+            <div className="mb-[15px] font-semibold uppercase text-yellow-400">
               Kunjungi Kami
             </div>
             <p className="m-0">
@@ -42,7 +42,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="w-fit text-nowrap">
-            <div className="uppercase mb-[15px] font-semibold text-yellow-400">
+            <div className="mb-[15px] font-semibold uppercase text-yellow-400">
               Hubungi Kami
             </div>
             <p className="m-0 mb-10">
@@ -50,7 +50,7 @@ export default function Footer() {
                 className="transition-opacity hover:opacity-80"
                 href="https://wa.me/6288222122250"
               >
-                <SiWhatsapp className="h-3 w-3 inline-block" /> Whatsapp.
+                <SiWhatsapp className="inline-block h-3 w-3" /> Whatsapp.
                 088222122250
               </a>
               <br />
@@ -59,14 +59,14 @@ export default function Footer() {
                 className="transition-opacity hover:opacity-80"
                 href="tel:88222122250"
               >
-                <Phone className="h-3 w-3 inline-block" /> Phone. 088222122250
+                <Phone className="inline-block h-3 w-3" /> Phone. 088222122250
               </a>
               <br />
               <a
                 className="transition-opacity hover:opacity-80"
                 href="mailto:layanan@dataritravel.com"
               >
-                <Mail className="h-3 w-3 inline-block" /> Email.
+                <Mail className="inline-block h-3 w-3" /> Email.
                 layanan@dataritravel.com
               </a>
             </p>
@@ -95,7 +95,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full border-t-[1px] border-white flex flex-row flex-wrap mt-8 pt-8 pb-4 gap-2 justify-center sm:justify-between">
+        <div className="mt-8 flex w-full flex-row flex-wrap justify-center gap-2 border-t-[1px] border-white pb-4 pt-8 sm:justify-between">
           <p className="text-yellow-400">
             &copy; {new Date().getFullYear()} PT. Dallas Wisata Mandiri. Semua
             Hak Cipta Dilindungi.
