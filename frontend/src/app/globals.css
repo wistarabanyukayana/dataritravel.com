@@ -1,20 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import "tailwindcss";
+/*@config "../../tailwind.config.ts";*/
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-background-dark: var(--background);
+  --color-foreground-dark: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-card-1: var(--card-1);
+  --color-card-2: var(--card-2);
+  --color-card-3: var(--card-3);
+  --color-card-4: var(--card-4);
+  --color-card-5: var(--card-5);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-xs: calc(var(--radius) - 4px);
+
+  --font-sans: var(--font-roboto), sans-serif;
+  --font-montserrat: var(--font-montserrat), serif;
+}
 
 :root {
   --background: #ccdc05; /* Default background color */
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -25,7 +50,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@layer base {
+@base {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -81,11 +106,11 @@ body {
   }
 }
 
-@layer base {
+@base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background-dark text-foreground-dark;
   }
 }
